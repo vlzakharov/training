@@ -10,9 +10,9 @@ echo Устанавливаем nginx сервер
 sleep 1
 apt-get install -y nginx
 
-#Запуск nginx сервера на yc виртуальной машине
+#Запуск nginx сервера на виртуальной машине
 clear
-echo Запуск nginx сервера на yc виртуальной машине
+echo Запуск nginx сервера на виртуальной машине
 sleep 1
 service nginx start
 
