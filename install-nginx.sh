@@ -1,20 +1,21 @@
+#!/bin/sh
 #Установка обновлений
 clear
 echo Устанавливаем обновления
 sleep 1
-apt-get update
+sudo apt update
 
 #Установка nginx сервера
 clear
 echo Устанавливаем nginx сервер
 sleep 1
-apt-get install -y nginx
+sudo apt install nginx
 
 #Запуск nginx сервера на виртуальной машине
 clear
 echo Запуск nginx сервера на виртуальной машине
 sleep 1
-service nginx start
+sudo systemctl start nginx
 
 #Проверяем работоспособность в виртуальной машине
 clear
