@@ -22,7 +22,7 @@ clear
 
 ### Создание папки с дистрибутивом и папки /opt/wildfly
 sudo mkdir $DISTR_DIR
-sudo mkdir /opt/wwildfly
+sudo mkdir /opt/wildfly
 
 ### Загрузка архива релиза WildFly
 sleep 2
