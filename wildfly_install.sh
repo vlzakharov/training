@@ -20,13 +20,14 @@ java --version
 sleep 2
 clear
 
-### Создание папки с дистрибутивом
+### Создание папки с дистрибутивом и папки /opt/wildfly
 sudo mkdir $DISTR_DIR
+sudo mkdir /opt/wwildfly
 
 ### Загрузка архива релиза WildFly
 sleep 2
 echo "Загрузим архив релиза в папку дистрибутива"
-cd ~/$DISTR_DIR
+cd $DISTR_DIR
 sudo wget $WILD_DIST
 sleep 2
 clear
@@ -34,7 +35,7 @@ clear
 ### Распаковка архива и добавление файлов в директорию /opt/wildfly
 sleep 2
 echo "Распакуем архив и добавим в директорию /opt/wildfly"
-cd ~/$DISTR_DIR
+cd $DISTR_DIR
 sudo tar xvf wildfly-*.tar.gz -C /opt/wildfly --strip 1
 sleep 2
 clear
